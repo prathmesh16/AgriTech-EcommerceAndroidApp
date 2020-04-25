@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relchatlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCCCCC"
+    android:windowSoftInputMode="adjustResize">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:weightSum="1"
+        android:windowSoftInputMode="adjustResize">
+
+        <EditText
+            android:id="@+id/chatMessageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.99"
+            android:background="@drawable/action_button_bg"
+            android:hint="Type here..."
+            android:maxHeight="300dp"
+            android:padding="7dp" />
+
+        <ImageButton
+            android:id="@+id/chatSendButton"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_menu_send"
+            android:src="@drawable/ic_menu_send"
+            tools:src="@drawable/ic_menu_send" />
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/message_swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:background="@drawable/chatback"
+        android:windowSoftInputMode="adjustResize">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleViewMessageList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:windowSoftInputMode="adjustResize" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

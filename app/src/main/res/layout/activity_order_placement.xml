@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".orderPlacement">
+
+    <FrameLayout
+        android:id="@+id/container_with_dotted_border"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/dotborder"
+        android:padding="40dp"
+        tools:layout_editor_absoluteX="10dp"></FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="252dp"
+        tools:layout_editor_absoluteY="144dp">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/thumb" />
+
+        <FrameLayout
+            android:id="@+id/container_with_dotted_border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/greendotborder"
+            android:padding="20dp"
+            tools:layout_editor_absoluteX="10dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:fontFamily="@font/andika"
+                android:gravity="center"
+                android:text="Your Oder has been Successfully Placed !!"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#215C1B"
+                android:textSize="30sp"
+                tools:text="Your Oder has been Successfully Placed !!" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="253dp"
+            android:layout_height="157dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/thank_you" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

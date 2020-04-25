@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1998AC</color>
+    <color name="colorPrimaryDark">#1998AC</color>
+    <color name="colorAccent">#000000</color>
+    <color name="chatGray">#5A5A5A</color>
+    <!--colors for profile-->
+    <color name="profileAccentColor">#F7F7F7</color>
+    <color name="profileBackground">#fff</color>
+    <color name="blackTextColor">#000</color>
+    <color name="colorGrey50">#fafafa</color>
+    <color name="colorGrey500">#1998AC</color>
+</resources>

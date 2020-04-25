@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_Profile"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="@string/nav_Profile" />
+        <item
+            android:id="@+id/nav_addItem"
+            android:icon="@drawable/ic_add_circle_black_24dp"
+            android:title="@string/nav_addItem" />
+        <item
+            android:id="@+id/nav_Pesticides"
+            android:icon="@drawable/ic_store_black_24dp"
+            android:title="@string/nav_Pesticides" />
+        <item
+            android:id="@+id/nav_delivery"
+            android:icon="@drawable/ic_query_builder_black_24dp"
+            android:title="@string/menu_delivery" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_tools" />
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_move_to_inbox_black_24dp"
+            android:title="@string/menu_orders" />
+        <item
+            android:id="@+id/nav_myItem"
+            android:icon="@drawable/ic_unarchive_black_24dp"
+            android:title="@string/nav_myItem" />
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_chat_black_24dp"
+            android:title="@string/nav_chat" />
+    </group>
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_exit_to_app_black_24dp"
+        android:title="@string/nav_logout" />
+    <item android:title="Feedback">
+        <menu>
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Feedback" />
+        </menu>
+    </item>
+    <item android:title="About us">
+        <menu>
+            <item
+                android:id="@+id/nav_aboutus"
+                android:icon="@drawable/ic_important_devices_black_24dp"
+                android:title="@string/menu_aboutus" />
+        </menu>
+    </item>
+
+</menu>

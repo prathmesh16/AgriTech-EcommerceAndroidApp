@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.AppCompat.EditText"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/loginback12"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".Login_SignUpFiles.LogIn">
+    <!--  android:background="#04122B"-->
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="40dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="53dp"
+                    android:src="@drawable/avtar1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin1"
+                android:layout_width="350dp"
+                android:layout_height="450dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-42dp"
+                android:background="#300B234E"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/avtar2" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:hint="UserName"
+                    android:textColorHint="#FFFFFFFF">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/usr"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:inputType="text"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#FFFFFF" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:hint="Password"
+                    android:textColorHint="#ffffff"
+                    app:passwordToggleEnabled="true">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/pass"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:inputType="textPassword"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#ffffff" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/forgotpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Forgot password? click here!"
+                    android:textColor="#FFFFFFFF"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/login_btn"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/btnbg"
+                    android:text="LOGIN"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/signup_btn"
+
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/btnbg2"
+                    android:text="SIGN UP"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
